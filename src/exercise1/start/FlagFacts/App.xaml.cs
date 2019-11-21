@@ -10,6 +10,7 @@ namespace FlagFacts
         public App()
         {
             DependencyService.Register<FlagDetailsViewModel>();
+            ///DependencyService.Register<FlagDetailsViewModel>();
 
             InitializeComponent();
 

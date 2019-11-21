@@ -38,5 +38,10 @@ namespace FlagFacts
         {
             vm.MoveToNextFlag();
         }
+
+        async void OnItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            await this.Navigation.PushAsync(new FlagDetailsPage());
+        }
     }
 }
