@@ -19,5 +19,11 @@ namespace FlagFacts
 
             ///InitializeComponent();
         }
+
+        async void OnItemTapped(object sender, ItemTappedEventArgs e)
+        {
+            await this.Navigation.PushAsync(new FlagDetailsPage());
+        }
+
     }
 }
